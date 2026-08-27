@@ -43,9 +43,10 @@ def preprocess_data(df: pd.DataFrame, target_col: str):
     # --- Fill missing values ---
     for col in X.columns:
         if X[col].dtype in [np.float64, np.int64, float, int]:
-            X[col].fillna(X[col].mean(), inplace=True)
+            X[col] = X[col].fillna(X[col].mean())
         else:
-            X[col].fillna(X[col].mode()[0] if not X[col].mode().empty else "Unknown", inplace=True)
+            fill_value = X[col].mode()[0] if not X[col].mode().empty else "Unknown"
+            X[col] = X[col].fillna(fill_value)
 
     # --- Fill target missing values (drop rows where target is NaN) ---
     mask = y.notna()
