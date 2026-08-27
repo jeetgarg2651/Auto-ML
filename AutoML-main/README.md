@@ -50,7 +50,7 @@ smart_automl/
 
 ---
 
-## 🚀 Run Locally
+##  Run Locally
 
 ### Prerequisites
 - Python 3.9+
@@ -156,6 +156,15 @@ The pipeline automatically:
 PRs welcome! For major changes, open an issue first to discuss what you'd like to change.
 
 ---
+
+
+
+##  Live Demo ⭐
+[Click here to try the application](https://jeetgarg2651-auto-ml-automl-mainappwebapp-choreversioned-mtuadj.streamlit.app/)
+
+
+## 💻 Source Code
+This repository contains the complete source code of the AutoML project.
 
 ## 📄 License
 
